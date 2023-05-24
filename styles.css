@@ -1,0 +1,93 @@
+:root {
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+} */
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  /* font-family: Roboto, sans-serif;
+  color: var(--black-p-color);
+  background-color: var(--wtite-color); */
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid red; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .card {
+  border: 1px solid #e7e9fc;
+} */
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  /* color: var(--blue-accent-color); */
+}
+
+.button {
+  text-decoration: none;
+}
+
+.button:hover {
+  /* font-family: "Roboto", sans-serif;
+  color: var(--wtite-color);
+  background-color: var(--blue-accent-color); */
+}
+
+.button:focus {
+  /* font-family: "Roboto", sans-serif;
+  color: var(--wtite-color);
+  background-color: var(--blue-accent-color); */
+}
