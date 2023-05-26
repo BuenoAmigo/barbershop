@@ -106,31 +106,45 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 112px;
+  background-color: rgba(25, 28, 38, 0.2);
 }
 .header-nav {
   display: none;
 }
-.logo-icon {
-  /* padding-left: 32px; */
-}
 .header-list {
 }
-.list {
-}
+
 .header-item {
 }
+
+.menu-header-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: transparent;
+}
 .menu-burger-icon {
-  color: #303030;
-  padding-right: 32px;
+  height: 100%;
+  width: 100%;
+  fill: var(--white-text-color);
 }
 
 /** ----------------------------Hero ---------------------------- **/
-.hero {
+
+.hero-container {
   padding-bottom: 209px;
+  background-color: rgba(25, 28, 38, 0.2);
+}
+
+.hero-wrap {
+  flex-grow: 1;
 }
 .hero-top-text {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -145,7 +159,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--white-text-color);
-  background-color: #303030;
   margin-bottom: 20px;
 }
 .hero-bottom-text {
@@ -159,20 +172,11 @@ body {
   width: 321px;
 }
 
-.menu-header-btn {
-  background-color: var(--orange-text-color);
-  border-color: transparent;
-}
-
-.menu-burger-icon {
-  fill: var(--title-black-color);
-}
-
 /** ----------------------------About us---------------------------- **/
-.about-us {
-  padding-bottom: 84px;
-}
+
 .about-us-container {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 .about-photo-list {
   display: none;
@@ -225,13 +229,16 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--title-black-color);
-  background-color: var(--white-text-color);
+  background-color: transparent;
   height: 40px;
   width: 160px;
 }
 
 /** --------------------Services and prices-------------------- **/
 .services-container {
+  background-image: url(./images/prices-bg-mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -251,31 +258,37 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--white-text-color);
-  background-color: var(--title-black-color);
   margin-bottom: 44px;
 }
 
 .services-prices-wrap {
-  padding: 30px 20px 40px;
+  display: block;
+  padding: 30px 20px 30px 40px;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   margin-bottom: 44px;
 }
-.services-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.services-list:not(:last-child) {
+  margin-bottom: 20px;
 }
 .services-item {
+  display: flex;
+  justify-content: space-between;
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
   color: var(--grey-text-color);
+  margin-bottom: 20px;
+}
+
+.services-item:last-child {
+  margin-bottom: 0;
 }
 
 .services-container > .online-booking-button {
   display: block;
   margin: 0 auto;
+  color: var(--white-text-color);
 }
 /** ------------------Why people come to us------------------ **/
 .advantages-container {
