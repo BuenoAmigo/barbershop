@@ -1,4 +1,9 @@
 :root {
+  --white-text-color: #ffffff;
+  --grey-text-color: #9da4bd;
+  --title-black-color: #303030;
+  --text-black-color: #555555;
+  --orange-text-color: #ff6c00;
 }
 p,
 h1,
@@ -23,6 +28,8 @@ ul {
 } */
 button {
   cursor: pointer;
+  border: 1px solid var(--orange-text-color);
+  border-radius: 25px;
 }
 
 address {
@@ -30,9 +37,9 @@ address {
 }
 
 body {
-  /* font-family: Roboto, sans-serif;
-  color: var(--black-p-color);
-  background-color: var(--wtite-color); */
+  font-family: Raleway, sans-serif;
+  color: var(--title-black-color);
+  /* background-color: var(--wtite-color); */
 }
 
 .list {
@@ -90,4 +97,392 @@ body {
   /* font-family: "Roboto", sans-serif;
   color: var(--wtite-color);
   background-color: var(--blue-accent-color); */
+}
+
+/** ----------------------------Header---------------------------- **/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 112px;
+}
+.header-nav {
+  display: none;
+}
+.logo-icon {
+  /* padding-left: 32px; */
+}
+.header-list {
+}
+.list {
+}
+.header-item {
+}
+.menu-burger-icon {
+  color: #303030;
+  padding-right: 32px;
+}
+
+/** ----------------------------Hero ---------------------------- **/
+.hero {
+  padding-bottom: 209px;
+}
+.hero-top-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--white-text-color);
+  background-color: #303030;
+  margin-bottom: 20px;
+}
+.hero-bottom-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+  width: 321px;
+}
+
+.menu-header-btn {
+  background-color: var(--orange-text-color);
+  border-color: transparent;
+}
+
+.menu-burger-icon {
+  fill: var(--title-black-color);
+}
+
+/** ----------------------------About us---------------------------- **/
+.about-us {
+  padding-bottom: 84px;
+}
+.about-us-container {
+}
+.about-photo-list {
+  display: none;
+}
+.about-photo-item {
+}
+
+.top-about-text {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+.about-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--title-black-color);
+  width: 306px;
+  margin-bottom: 20px;
+}
+.bottom-about-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: var(--text-black-color);
+  margin-bottom: 20px;
+}
+.lower-about-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--text-black-color);
+  margin-bottom: 40px;
+}
+
+.online-booking-button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  background-color: var(--white-text-color);
+  height: 40px;
+  width: 160px;
+}
+
+/** --------------------Services and prices-------------------- **/
+.services-container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.top-services-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+.services-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-text-color);
+  background-color: var(--title-black-color);
+  margin-bottom: 44px;
+}
+
+.services-prices-wrap {
+  padding: 30px 20px 40px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: 44px;
+}
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services-item {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}
+
+.services-container > .online-booking-button {
+  display: block;
+  margin: 0 auto;
+}
+/** ------------------Why people come to us------------------ **/
+.advantages-container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.advantages-top-text {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+.advantages-bottom-text {
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-black-color);
+  margin-bottom: 20px;
+}
+.advantages-list {
+}
+.advantages-item {
+  background-color: #f7f7f7;
+}
+.advantages-item-title {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--title-black-color);
+}
+
+.advantages-item-text {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-black-color);
+}
+
+/** ---------------------Our barbers--------------------- **/
+.barbers-container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #f7f7f7;
+}
+
+.barbers-top-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+.barbers-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--title-black-color);
+  margin-bottom: 44px;
+}
+.barbers-list {
+}
+
+.barbers-item {
+}
+
+.barbers-team-wrap {
+  padding-top: 30px;
+}
+
+.barbers-name-text {
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-black-color);
+  margin-bottom: 8px;
+}
+
+.barbers-position-text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--orange-text-color);
+  margin-bottom: 30px;
+}
+
+.barbers-socnetworks-wrap {
+}
+.barbers-socnetwork-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+.barbers-socnetwork-item {
+}
+/** ---------------------Photo of works--------------------- **/
+.works-container {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.works-top-text {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  margin-bottom: 71px;
+}
+.works-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.works-item {
+}
+
+/** ---------------------Footer--------------------- **/
+.footer-container {
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--white-text-color);
+  background-color: var(--title-black-color);
+}
+
+.footer-contacts-wrap {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.footer-contacts-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--white-text-color);
+  background-color: var(--title-black-color);
+  margin-bottom: 40px;
+}
+
+.footer-address-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-address {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+  margin-bottom: 20px;
+}
+.footer-tel-number {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+  margin-bottom: 20px;
+}
+.footer-mail {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}
+.footer-workhours-text {
+}
+.footer-timework-text {
 }

@@ -1,0 +1,10 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 418px;
+  }
+
+  .hero-text-wrap {
+    width: 321px;
+    text-align: start;
+  }
+}
