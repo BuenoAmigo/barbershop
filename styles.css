@@ -105,9 +105,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 112px;
   background-color: rgba(25, 28, 38, 0.2);
 }
+
 .header-nav {
   display: none;
 }
@@ -136,8 +136,17 @@ body {
 /** ----------------------------Hero ---------------------------- **/
 
 .hero-container {
+  /* background-image: url(./images/hero-photo1.jpg);
+  background-repeat: no-repeat; */
+  padding-top: 112px;
   padding-bottom: 209px;
-  background-color: rgba(25, 28, 38, 0.2);
+}
+
+.background-image {
+  background-image: url(./images/hero-photo1-mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -100px;
 }
 
 .hero-wrap {
@@ -151,6 +160,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 .hero-title {
@@ -236,7 +246,7 @@ body {
 
 /** --------------------Services and prices-------------------- **/
 .services-container {
-  background-image: url(./images/prices-bg-mob@1x.jpg);
+  background-image: url(./images/services-photo-mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 84px;
@@ -345,6 +355,8 @@ body {
 }
 
 /** ---------------------Our barbers--------------------- **/
+.our-barbers {
+}
 .barbers-container {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -370,6 +382,10 @@ body {
   margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .barbers-item {
@@ -407,8 +423,30 @@ body {
   align-items: center;
   gap: 22px;
 }
-.barbers-socnetwork-item {
+.barbers-item:not(:last-child) {
+  margin-bottom: 64px;
 }
+
+.soc-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link:hover,
+.soc-link:focus > .soc-networks-icon {
+  fill: var(--orange-text-color);
+}
+
 /** ---------------------Photo of works--------------------- **/
 .works-container {
   padding-top: 84px;
